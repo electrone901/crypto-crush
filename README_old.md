@@ -1,17 +1,20 @@
 # Crypto Crush
-Crypto Crush is a decentralized version of the Candy Crush platform for user to play and ern NFTs.  Users can play, mint NFTs,  send it to their friends or other playes NFTs. As well as to add themes for new game topics.
+Crypto Crush is a decentralized version of the Candy Crush platform for users to play and earn NFTs.  Users can play, mint NFTs,  send them to their friends or other players' NFTs. As well as to add themes for new game topics.
 
 
 # How it's made
-Crypto Crush application makes use of the following softwares:
+Crypto Crush application makes use of the following software:
 * Deployed smart contracts on the `Polygon (Matic)` Mumbai test network.
-* Used `Truffle & MetaMask`.
-* Upload and store files to ` Liggthouse,  IPFS NFTStorage` [IPFS](https://nft.storage/) platform.
+* Used `hardhat & MetaMask`.
+* Upload and store files to ` Lighthouse,  IPFS NFTStorage` [IPFS](https://nft.storage/) platform.
 * Build a simple `Solidity ` smart contract.
 * `OpenZeppelin` Library to customize smart contract
+`Covalent`fetch and retrieves all the NFT from a wallet address
+* `NFTPort`Facilitated the NFT minting process without any fee for transactions.
 * Develop, deploy, and run tests the application with `Ganache` (local blockchain)
 * Build and use `React Js` to create components for single-page applications.
-* `Material-UI` to build faster, beautiful, and more accessible React applications.
+* Chainlink: for random generator number,    Material-UI` to build faster, beautiful, and more accessible React applications.
+
 
 Demo Purposes,
 

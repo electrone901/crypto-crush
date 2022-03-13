@@ -1,8 +1,16 @@
+import React, { useState } from 'react'
 import { ethers } from 'ethers'
 import axios from 'axios'
 import lighthouse from 'lighthouse-web3'
+import { NFTStorage, File } from 'nft.storage'
+import { apiKey } from './ipfs'
 
 function UploadCID() {
+  const imgName = 'New theme'
+  const description = 'This is a new theme'
+  const [img, setImage] = useState('')
+  const [imgType, setImageType] = useState('')
+
   const sign_message = async () => {
     const provider = new ethers.providers.Web3Provider(window.ethereum)
     const signer = provider.getSigner()
@@ -37,7 +45,23 @@ function UploadCID() {
   //   return txResponse
   // }
 
+  const handleSubmit = async (event) => {
+    event.preventDefault()
+    try {
+      const client = new NFTStorage({ token: apiKey })
+      const metadata = await client.store({
+        name: imgName,
+        description: description,
+        image: new File([img], imgName, { type: imgType }),
+      })
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
   const uploadFile = async (e) => {
+    setImage(e.target.files[0])
+    setImageType(e.target.files[0].type)
     e.persist()
 
     let network = 'fantom-testnet'
@@ -99,7 +123,6 @@ function UploadCID() {
       console.log(add_cid_response)
       console.log(add_cid_response.pin.cid)
       // add the url goes to the image =>   ipfs://QmVcq1pTNu4gTUGUiYL63L8RVCMrXQWuwKFngZDV3faoxh
-
     } else {
       console.log('Please connect to a supported network')
     }
