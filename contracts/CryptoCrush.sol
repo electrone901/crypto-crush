@@ -17,12 +17,13 @@ contract CryptoCrush is ERC721 {
         address wallet_address;
         uint [] nftsIds;
         uint maxScore;
+        uint totalScore;
     }
 
     // creates user
    function createAccount() external {
-    users[msg.sender] = User(msg.sender, new uint [](0), 0);
-    emit AccountCreated(msg.sender, new uint [](0), 0);
+    users[msg.sender] = User(msg.sender, new uint [](0), 0, 0);
+    emit AccountCreated(msg.sender, new uint [](0), 0,0);
    }
    function getNFTs() external view returns(uint [] memory){
        User storage usersReference = users[msg.sender];
@@ -32,7 +33,8 @@ contract CryptoCrush is ERC721 {
    event AccountCreated (
         address wallet_address,
         uint [] NFT,
-        uint maxScore
+        uint maxScore,
+        uint totalScore
     );
 
     event cryptoCrusCreated (
@@ -49,6 +51,7 @@ contract CryptoCrush is ERC721 {
 
         User storage usersReference = users[msg.sender];
         usersReference.nftsIds.push(_id);
+        usersReference.totalScore += points;
         if(points > usersReference.maxScore) {
             usersReference.maxScore = points;
         }

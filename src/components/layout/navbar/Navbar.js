@@ -19,7 +19,15 @@ import { StylesProvider } from '@material-ui/core/styles'
 import './Navbar.css'
 import logo from '../../../images/logo.jpg'
 
-export const Navbar = () => {
+export const Navbar = ({
+  account,
+  connectWallet,
+  setAccount,
+  logout,
+  createAccount,
+  mintNFT,
+  getNFTs,
+}) => {
   const [anchorEl, setAnchorEl] = useState(null)
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = useState(null)
 
@@ -110,20 +118,54 @@ export const Navbar = () => {
             </Link>
             <Link to="/" className="whiteLink">
               <Typography className="title" variant="h6" noWrap>
-                PetGram
+                CryptoCrush
               </Typography>
             </Link>
             <Button className="whiteLink" component={Link} to="/">
               Home
             </Button>
 
-            <Button className="whiteLink" component={Link} to="/create-pet">
+            {/* <Button className="whiteLink" component={Link} to="/create-pet">
               Create Pet
+            </Button> */}
+
+            <Button className="whiteLink" onClick={createAccount}>
+              CreateAcc
+            </Button>
+
+            <Button className="whiteLink" onClick={mintNFT}>
+              mintNFT
+            </Button>
+
+            <Button className="whiteLink" onClick={getNFTs}>
+              getNFTs
             </Button>
 
             <div className="grow" />
             <div className="sectionDesktop">
               {/* Add Account  */}
+              {account ? (
+                <>
+                  <Button
+                    variant="contained"
+                    className="connected-btn"
+                    endIcon={<VerifiedUserSharpIcon />}
+                  >
+                    {account.substring(0, 8)}...{account.substring(34)}
+                  </Button>
+                  <Button className="whiteLink" onClick={logout}>
+                    logout
+                  </Button>
+                </>
+              ) : (
+                <Button
+                  variant="contained"
+                  className="connected-btn"
+                  onClick={connectWallet}
+                >
+                  Login
+                </Button>
+              )}
 
               <IconButton
                 edge="end"

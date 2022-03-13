@@ -1,0 +1,126 @@
+.nav-like {
+    /* background-color: #3f51b5; */
+    background-color: #cd03fa;
+    width: 100vw;
+    color: white;
+    padding-top: 1.5rem;
+}
+
+.nav-like-container {
+    padding-top: 1rem;
+}
+
+.whiteLink {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 1.5;
+    text-transform: capitalize;
+}
+
+.MuiIconButton-colorInherit {
+    color: white;
+}
+
+.section-right {
+    text-align: right;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.whiteLink {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 1.5;
+    text-transform: capitalize;
+}
+
+.whiteLink:nth-last-of-type() {
+    padding-right: 1rem;
+}
+
+.logo {
+    width: 4rem;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.menuButton {
+    margin-right: 2px;
+}
+
+.search {
+    position: 'relative';
+    border-radius: 5px;
+    background-color: white;
+}
+
+.search:hover {
+    background-color: salmon;
+}
+
+.searchIcon {
+    padding: 5px;
+    height: 100%;
+    position: absolute;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputRoot {
+    color: 'inherit';
+}
+
+.sectionMobile {
+    display: flex;
+}
+
+.connect-wallet-btn {
+    background-color: #06c2fbcc;
+    color: white;
+    font-weight: 800;
+    text-transform: none;
+}
+
+.connected-btn {
+    /* background-color: #15d636cc; */
+    background-color: #61dafb;
+    color: white;
+    font-weight: 800;
+    text-transform: none;
+}
+
+.text-field {
+    text-align: start;
+}
+
+.MuiSelect-outlined.MuiSelect-outlined {
+    color: white;
+}
+
+.MuiInputLabel-outlined.MuiInputLabel-shrink {
+    color: white;
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiSelect-nativeInput {
+    border-color: white;
+    border-width: 1px;
+}

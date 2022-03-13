@@ -1,3 +1,24 @@
+.side-menu {
+    /* background-color: #f50057;
+    text-align: center;
+    padding-right: 1rem; */
+    /* background-color: #e2e2e2; */
+    background-color: #070707d1;
+    /* background-color: #ffffff; */
+    text-align: center;
+    padding-right: 1rem;
+    color: white;
+}
+
+.t {
+    width: 97%;
+}
+
+.container-game {
+    text-align: -webkit-center;
+    background-color: #ebdef8;
+}
+
 .board-containe {
     display: flex;
     padding: 30px;
@@ -13,4 +34,22 @@
 .game img {
     width: 70px;
     height: 70px;
+}
+
+.card2 {
+    max-width: 345px;
+}
+
+.avatar {
+    border-radius: 50%;
+    padding: 5px;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgb(128, 125, 125);
+    margin: 1em 0;
+    padding: 0;
 }

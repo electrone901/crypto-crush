@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/Users/mac/Desktop/candy-crush/contracts/CryptoCrush.sol": {
-      "lastModificationDate": 1646782997961,
-      "contentHash": "eb6e55a53d6d622627df5033c5277a7d",
+      "lastModificationDate": 1646895301074,
+      "contentHash": "b561b734df40a846139ee5f2b4e5c543",
       "sourceName": "contracts/CryptoCrush.sol",
       "solcConfig": {
         "version": "0.6.12",
