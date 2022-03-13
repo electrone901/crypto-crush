@@ -160,6 +160,7 @@ function App() {
             moves={moves}
             setMoves={setMoves}
             userInfo={userInfo}
+            mintNFT={mintNFT}
           />
         </Route>
         <Switch>

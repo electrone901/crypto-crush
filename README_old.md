@@ -1,20 +1,22 @@
-# PetGram
-In this tutorial, you will learn how to build a Social Media DApp (Decentralized Application) like Instagram and how to Deploy it on the Polygon (Matic) Mumbai test network. So, grab your favorite drink ☕️ and let's get started!
-
-PetGram is a decentralized version of the Instagram platform for pets where users can browse cute photos of their favorite pets, see details of a specific pet, create a post and earn NFTS.
-
+# Crypto Crush
+Crypto Crush is a decentralized version of the Candy Crush platform for user to play and ern NFTs.  Users can play, mint NFTs,  send it to their friends or other playes NFTs. As well as to add themes for new game topics.
 
 
 # How it's made
-PetGram application makes use of the following softwares:
+Crypto Crush application makes use of the following softwares:
 * Deployed smart contracts on the `Polygon (Matic)` Mumbai test network.
 * Used `Truffle & MetaMask`.
-* Upload and store files to `IPFS NFTStorage` [IPFS](https://nft.storage/) platform.
+* Upload and store files to ` Liggthouse,  IPFS NFTStorage` [IPFS](https://nft.storage/) platform.
 * Build a simple `Solidity ` smart contract.
 * `OpenZeppelin` Library to customize smart contract
 * Develop, deploy, and run tests the application with `Ganache` (local blockchain)
 * Build and use `React Js` to create components for single-page applications.
 * `Material-UI` to build faster, beautiful, and more accessible React applications.
+
+Demo Purposes,
+
+0xAF67cbD8fb00759C3b4667beAcfBB3600e25476A
+This is a gift from Crypto crush game
 
 
 ## Demo

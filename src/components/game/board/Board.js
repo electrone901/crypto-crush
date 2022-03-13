@@ -35,6 +35,7 @@ const Board = ({
   moves,
   setMoves,
   userInfo,
+  mintNFT,
 }) => {
   const [currentColorArrangment, setCurrentColorArrangment] = useState([])
   const [squareBeingDraggred, setSquareBeingDraggred] = useState(null)
@@ -199,6 +200,9 @@ const Board = ({
     setSquareBeingReplaced(e.target)
     const currentMoves = moves + 1
     setMoves(currentMoves)
+    if (currentMoves === 2) {
+      mintNFT()
+    }
   }
 
   const dragEnd = (e) => {
